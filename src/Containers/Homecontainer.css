@@ -1,0 +1,50 @@
+.HomeContainer-cont{
+    width: 80%;
+    padding-left: 15px;
+    padding-top: 15px;
+    background-color: grey;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid white;
+    
+}
+.button-cont{
+    text-align: center;
+    margin: 10px;
+}
+
+.button{
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+}
+
+.button-action-cont{
+    width: 20%;
+    margin-top: 10px;
+    margin-right: auto;
+  margin-left: auto;
+
+}
+
+@media(max-width: 800px){
+    .button-action-cont{
+        width: 40%;
+        
+    }
+  
+}
+
+
+
+
+
+
+  
+

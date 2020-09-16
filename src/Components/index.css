@@ -1,0 +1,75 @@
+.customers-list-item{
+    align-content: center;
+    width: 100%;
+    margin: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    background:grey;
+    display: inline-block;
+  }
+
+
+  .field{
+
+    width: 32%;
+    margin: 1.2px;
+    padding: 4px;
+    background:white;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .customers-list-cont{
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+  
+  }
+
+  button{
+      border: none;
+      text-align: right;
+      
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 15px 32px;
+      cursor: pointer;
+      background-color: #4CAF50;
+  
+  }
+
+@media(max-width: 800px){
+    .field{
+        width: 122px;
+        font-size: 15px;
+
+    }
+    .customers-list-cont{
+        margin-left: 2px;
+    }
+    .customers-list-item{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+}
+
+@media(max-width: 1200px){
+    .field{
+        width: 122px;
+        font-size: 15px;
+
+    }
+    .customers-list-cont{
+        margin-left: 2px;
+    }
+    .customers-list-item{
+        width: 400px;
+    }
+  
+}
+
