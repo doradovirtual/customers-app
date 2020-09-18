@@ -7,9 +7,7 @@ import CustomersList from './../Components/CustomersList';
 import CustomersActions from '../Components/CustomersActions';
 import {getCustomers} from './../selectors/customers';
 import './Homecontainer.css';
-import { fetchCustomers } from '../actions/fetchCustomers';
-
-
+import {fetchCustomers}  from './../actions/fetchCustomers';
 
 class CustomersCointainer extends Component {
 
@@ -58,18 +56,18 @@ CustomersCointainer.propTypes = {
 };
 
 CustomersCointainer.defaultProps = {
-   customers: []
+   customers: [ ]
 }
 
 /**
  * {fetchCustomers} es el mapDispatchToProps ssssss
  */
  
+
+ 
  const mapStateToProps = state => ({
-     customers: getCustomers(state.customers),
+     customers: getCustomers(state),
  });
-
-
 
 
 export default withRouter(connect(mapStateToProps, {fetchCustomers})(CustomersCointainer));
