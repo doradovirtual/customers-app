@@ -15,6 +15,8 @@ class CustomersCointainer extends Component {
 
     componentDidMount() {
         this.props.fetchCustomers();
+        
+       
     }
     
 
@@ -43,6 +45,7 @@ class CustomersCointainer extends Component {
         <div>
             <AppFrame header ={'Listado de Clientes'}
                 body = {this.renderBody(this.props.customers)}
+                
             ></AppFrame>
         </div>
     );
@@ -55,7 +58,7 @@ CustomersCointainer.propTypes = {
 };
 
 CustomersCointainer.defaultProps = {
-   
+   customers: []
 }
 
 /**
@@ -63,8 +66,10 @@ CustomersCointainer.defaultProps = {
  */
  
  const mapStateToProps = state => ({
-     customers: getCustomers(state),
- })
+     customers: getCustomers(state.customers),
+ });
+
+
 
 
 export default withRouter(connect(mapStateToProps, {fetchCustomers})(CustomersCointainer));
