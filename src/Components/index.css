@@ -1,75 +1,261 @@
 .customers-list-item{
-    align-content: center;
     width: 100%;
-    margin: 1px;
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 4px;
-    background:grey;
+    text-align: center;
     display: inline-block;
   }
 
+.app-header{
+    width: 80%;
+    background-color: white;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-style: outset;
+    border-bottom-color: black;
+    padding-bottom: none;
+
+}
 
   .field{
-
     width: 32%;
     margin: 1.2px;
     padding: 4px;
     background:white;
     display: inline-block;
     color: white;
-    cursor: pointer;
+    
   }
 
   .customers-list-cont{
-      width: 60%;
+      width: 78%;
+      padding-top: 10px;
+      background-color:rgba(0,0,0, 0.7);
       margin-left: auto;
       margin-right: auto;
+      
+  }
   
+  .customers-edit-cont{
+    width: 78%;
+    padding-top: 10px;
+    background-color:rgba(0,0,0, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
   }
 
+ 
+
   button{
-      border: none;
+      margin: 10px;
       text-align: right;
-      
       border: none;
       color: white;
       font-size: 16px;
       padding: 15px 32px;
       cursor: pointer;
-      background-color: #4CAF50;
+      background-color: rgb(76, 175, 80, 0.5);
   
   }
 
+  button:hover{
+    background-color: rgb(76, 175, 80, 0.8);
+    padding: 20px 37px;
+
+  }
+.table-customer-cont{
+    width: 80%;
+    padding-top: 20px;
+
+}
+.table-customer-cont th{
+    width: 15%;
+  
+}
+span{
+    font-size: 11px;
+    font-style: italic;
+}
+
+.h3-cont{
+    text-align: start;
+    padding-left: 0;
+    border-bottom-style: outset;
+    border-bottom-color:rgba(58, 56, 56, 0.7);
+    width: 95%;
+}
+.table-title-cont{
+    width:100%;
+}
+
+table{
+    text-align: justify;
+    margin-left: 30px;
+
+}
+
+
+.customer-data{
+    width: 78%;
+    background-color: rgba(0,0,0, 0.7);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.form-edit-cont{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0, 0.4);
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.form-edit-cont th{
+    width: 40%;
+}
+
+.form-edit-cont input{
+    width: 250px;
+    height: 30px;
+    background-color:rgba(6, 82, 22, 0.5);
+    color: white;
+    border: none ;
+}
+
+.customers-actions{
+    text-align: center;
+}
+
+
+/*.form-edit-cont input[name="age"]{
+    width: 40%;
+   
+}*/
+
+
+input:hover{
+    background-color: rgba(6, 82, 22, 0.9);
+}
+
+
+
+
+
+
 @media(max-width: 800px){
     .field{
-        width: 122px;
-        font-size: 15px;
+        width: 25%;
+        font-size: 13px;
+        text-align: center;
 
     }
     .customers-list-cont{
-        margin-left: 2px;
+        width: 78%;
     }
+   
     .customers-list-item{
-        width: 400px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        text-align: justify;
+        padding-left: 30px;
     }
-  
+    .table-title-cont{
+        width: 85%;
+    }
+    
+    .form-edit-cont{
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        background-color: rgba(0,0,0, 0.4);
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .form-edit-cont input{
+        width: 50%;
+    }
+
+    .form-edit-cont th{
+        width: 40%;
+    }
+    
+    .form-edit-cont input{
+        width: 150px;
+        height: 30px;
+        background-color:rgba(6, 82, 22, 0.5);
+        color: white;
+        border: none ;
+    }
+ 
 }
 
-@media(max-width: 1200px){
+@media(min-width: 1000px){
     .field{
-        width: 122px;
+        width: 31%;
         font-size: 15px;
+        text-align: center;
 
     }
     .customers-list-cont{
-        margin-left: 2px;
+        width: 78%;
     }
+   
     .customers-list-item{
-        width: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        padding-left: 30px;
+        font-size: 10px;
     }
+    .table-title-cont{
+        width: 100%;
+    }
+    
+    .form-edit-cont{
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        background-color: rgba(0,0,0, 0.4);
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .form-edit-cont input{
+        width: 100%;
+    }
+
+    .form-edit-cont th{
+        width: 40%;
+    }
+    
+    .form-edit-cont input{
+        width: 250px;
+        height: 30px;
+        background-color:rgba(6, 82, 22, 0.5);
+        color: white;
+        border: none ;
+    }
+
+   
+    
+
   
 }
+
+
 

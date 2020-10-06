@@ -1,13 +1,15 @@
 .HomeContainer-cont{
-    width: 80%;
+    width: 78%;
     padding-left: 15px;
     padding-top: 15px;
-    background-color: grey;
+    background-color:rgba(0,0,0, 0.7);
     margin-right: auto;
     margin-left: auto;
     border: 2px solid white;
-    
+    color: white;
+    text-align: center;
 }
+
 .button-cont{
     text-align: center;
     margin: 10px;
@@ -23,20 +25,28 @@
     display: inline-block;
     font-size: 16px;
     border: none;
+   
 }
+
 
 .button-action-cont{
-    width: 20%;
-    margin-top: 10px;
+    width: 78%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     margin-right: auto;
-  margin-left: auto;
-
+    margin-left: auto;
+    background-color:rgba(0,0,0, 0.7);
 }
+
+.customers-list-cont{
+    background-color:rgba(0,0,0, 0.7); 
+}
+
 
 @media(max-width: 800px){
     .button-action-cont{
-        width: 40%;
-        
+        width: 78%;  
     }
   
 }

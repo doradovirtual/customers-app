@@ -4,23 +4,6 @@
   flex-flow: column;
   height: 100%;
   
-  
-}
-
-.cont1{
-  width: 100%;
-  background-color: green;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 5px black;
-  
-}
-.cont2{
-  width: 100%;
-  background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  
 }
 
 
@@ -28,9 +11,5 @@
   .cont{
     flex-direction: column;
   }
-  .cont1, .cont2{
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-  }
+
 }

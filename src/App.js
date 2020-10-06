@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {  BrowserRouter as Router, Route ,Switch} from 'react-router-dom';
 import './App.css';
 import CustomersCointainer from './Containers/CustomersCointainer';
+import CustomerContainer from "./Containers/CustomerContainer"
 import HomeContainer from './Containers/HomeContainer';
 
 
@@ -19,23 +20,20 @@ class App extends Component {
     return(
       <Router>
       <div className= "cont">
-              <div className ="cont1">
                 <Route exact path = "/" component={this.renderHome}/>
-              </div> 
-              <div >
                 <Route exact path = "/customers" component={this.renderCustomerListContainer}/>
-              </div>
-             
               <Switch>
                   <Route  path = "/customers/new" component={this.renderCustomerNewContainer}/>
-                  <Route  path = "/customers/:dni" component={this.renderCustomerContainer}/>
+                  <Route  path = "/customers/:dni" 
+                    render={props =><CustomerContainer  dni = {props.match.params.dni} />}/>
               </Switch>
-          <br></br>
       </div>
       </Router>
 
    );
   }
 }
+
+
 
 export default App;

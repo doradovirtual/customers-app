@@ -23,15 +23,15 @@ class HomeContainer extends Component {
             body={
                 <div className="HomeContainer-cont">
                     Esta es la pantalla inicial
+                    <br></br>
+                    
                     <CustomersActions>
                         <div className="button-cont">
                             <button className="button" onClick={this.handleOnClick}>Listado de clientes</button>
                         </div>
-
                     </CustomersActions>
                 </div>
            }>
-
            </AppFrame>
         </div>
     );

@@ -1,23 +1,24 @@
 {
-"Customers" : [
-  {
-    "dni" : "27000000",
-    "name" : "Juan Perez11",
-    "age" : 37
-},
-{
-    "dni" : "30000000",
-    "name" : "Sebastian bello",
-    "age" : 27
-},
-{
-    "dni" : "60000000",
-    "name" : "lucia martinez",
-    "age" : 30
-}
-
-],
-
+  "Customers": [
+    {
+      "id": "22000000",
+      "dni": "22000000",
+      "name": "Sebas",
+      "age": 38
+    },
+    {
+      "id": "30000001",
+      "dni": "30000001",
+      "name": " Sebastian Bello",
+      "age": 44
+    },
+    {
+      "id": "60000000",
+      "dni": "60000000",
+      "name": "lucia martinez",
+      "age": 30
+    }
+  ],
   "posts": [
     {
       "id": 1,

@@ -6,6 +6,7 @@ import './index.css';
 const CustomersList =({customers, urlPath}) => {
     return (
         <div>
+            
             <div className="customers-list-cont">
               {
                customers.map(c=>
